@@ -1,0 +1,130 @@
+<div class="ui-fluid">
+    <div class="ui-g">
+
+        <div class="ui-g-12 ui-lg-6">
+            <div class="card">
+                <h1>Tárgy adatai</h1>
+                <div class="ui-g form-group">
+                    <div class="ui-g-12">
+                        <div class="ui-g-12 ui-md-4">
+                            <label for="name">Aktív</label>
+                        </div>
+                        <div class="ui-g-12 ui-md-8">
+                            <p-inputSwitch [(ngModel)]="switchChecked"></p-inputSwitch>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-4">
+                            <label for="name">Név</label>
+                        </div>
+                        <div class="ui-g-12 ui-md-8" style="margin-bottom:10px">
+                            <input id="name" type="text" pInputText/>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-4">
+                            <label for="itemId">Azonosító</label>
+                        </div>
+                        <div class="ui-g-12 ui-md-8" style="margin-bottom:10px">
+                            <input id="itemId" type="text" pInputText/>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-4">
+                            <label for="autocomplete">Vitrinszám</label>
+                        </div>
+                        <div class="ui-g-12 ui-md-8">
+                            <p-autoComplete [(ngModel)]="country" [suggestions]="filteredCountries"
+                                            (completeMethod)="filterCountry($event)" field="name"
+                                            placeholder="" [minLength]="1"></p-autoComplete>
+                        </div>
+                        <div class="ui-g-12 ui-md-4">
+                            <label for="editor">Leírás</label>
+                        </div>
+                        <div class="ui-g-12">
+                            <div class="ui-g">
+                                <p-editor [style]="{'height':'320px'}"></p-editor>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui-g-12 ui-lg-6">
+            <div class="card no-margin">
+                <h1>Geléria</h1>
+                <p-galleria [images]="images" panelWidth="500" panelHeight="313"></p-galleria>
+            </div>
+
+            <div class="card no-margin">
+                <h1>Képfeltöltés</h1>
+                <p-toast></p-toast>
+
+                <p-fileUpload name="images[]" url="./upload.php" (onUpload)="onUpload($event)"
+                              multiple="multiple" accept="image/*" maxFileSize="1000000">
+                    <ng-template pTemplate="content">
+                        <ul *ngIf="uploadedFiles.length">
+                            <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+                        </ul>
+                    </ng-template>
+                </p-fileUpload>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <div class="card">
+                <div class="ui-g">
+                    <div class="ui-g-12 ui-md-6">
+                        <h1>Vitrin választó fa (terem -> vitrin?)</h1>
+                        <p-tree [value]="files2" selectionMode="checkbox" [(selection)]="selectedNodes" [style]="{width: '100%'}"></p-tree>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <div class="card no-margin">
+                <h1>Leírás többnyevű (ide jöhetne a többi nyelve függő adat is!?)</h1>
+                <p-accordion>
+                    <p-accordionTab header="Magyar leírás" [selected]="true">
+                        <p-editor [style]="{'height':'160px'}"></p-editor>
+                    </p-accordionTab>
+                    <p-accordionTab header="Angol leírás">
+                        <p-editor [style]="{'height':'160px'}"></p-editor>
+                    </p-accordionTab>
+                    <p-accordionTab header="Német leírás">
+                        <p-editor [style]="{'height':'160px'}"></p-editor>
+                    </p-accordionTab>
+                </p-accordion>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ui-g">
+        <div class="ui-g-12 ui-g-nopad">
+            <div class="ui-g-12 ui-lg-6" style="padding-top:0">
+                <div class="card">
+                    <div class="ui-g">
+                        <div class="ui-g-12 ui-md-4" style="text-align:center">
+                            <button pButton type="button" label="Mégse" style="margin-bottom:10px"></button>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-4" style="text-align:center">
+                            <button pButton type="button" label="Mentés" style="margin-bottom:10px"
+                                    class="ui-button-success"></button>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-4" style="text-align:center">
+                            <p-confirmDialog header="Confirmation" icon="pi pi-info-circle" width="425"></p-confirmDialog>
+                            <button type="text" (click)="confirm()" pButton class="ui-button-danger" label="Törlés" style="margin-bottom:10px"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="ui-fluid">
+    <div class="ui-g">
+
+        <div class="ui-g-12 ui-lg-6">
+            <div class="card">
+                <h1>Vitrin adatai</h1>
+                <div class="ui-g form-group">
+                    <div class="ui-g-12">
+                        <div class="ui-g-12 ui-md-4">
+                            <label for="name">Aktív</label>
+                        </div>
+                        <div class="ui-g-12 ui-md-8">
+                            <p-inputSwitch [(ngModel)]="switchChecked"></p-inputSwitch>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-4">
+                            <label for="name">Név</label>
+                        </div>
+                        <div class="ui-g-12 ui-md-8" style="margin-bottom:10px">
+                            <input id="name" type="text" pInputText/>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-4">
+                            <label for="cabinetId">Vitrinszám</label>
+                        </div>
+                        <div class="ui-g-12 ui-md-8" style="margin-bottom:10px">
+                            <input id="cabinetId" type="text" pInputText/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-12 ui-g-nopad">
+            <div class="ui-g-12 ui-lg-6" style="padding-top:0">
+                <div class="card">
+                    <div class="ui-g">
+                        <div class="ui-g-12 ui-md-4" style="text-align:center">
+                            <button pButton type="button" label="Mégse" style="margin-bottom:10px"></button>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-4" style="text-align:center">
+                            <button pButton type="button" label="Mentés" style="margin-bottom:10px"
+                                    class="ui-button-success"></button>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-4" style="text-align:center">
+                            <p-confirmDialog header="Confirmation" icon="pi pi-info-circle" width="425"></p-confirmDialog>
+                            <button type="text" (click)="confirm()" pButton class="ui-button-danger" label="Törlés" style="margin-bottom:10px"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

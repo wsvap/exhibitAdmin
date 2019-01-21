@@ -1,0 +1,511 @@
+//main color scheme
+$primaryColor:#7B95A3;
+$primaryDarkColor:#6c8999;
+$primaryDarkerColor:#617c8a;
+$primaryTextColor:#ffffff;
+
+//Global
+$fontFamily: "Open Sans","Helvetica Neue",sans-serif;
+$fontSize:14px;
+$textColor:#666666;
+$textSecondaryColor:#a6a6a6;
+$borderRadius:2px;
+$transitionDuration:.2s;
+$primeIconFontSize:1.25em;
+
+//anchors
+$linkColor:$primaryColor;
+$linkHoverColor:$primaryDarkColor;
+$linkActiveColor:$primaryDarkerColor;
+
+//highlight
+$highlightBgColor:#AFD3C8;
+$highlightBgColorDark:#8DC8B5;
+$highlightColorText:#385048;
+
+//input field (e.g. inputtext, spinner, inputmask)
+$inputPadding:0.429em;
+$inputBgColor:#f4f4f4;
+$inputBorder:1px solid #dadada;
+$inputHoverBorderColor:#a6a6a6;
+$inputFocusBorderColor:$primaryColor;
+$inputFocusShadow:0 0 4px 0 #d8efe9;
+$inputErrorBorder:1px solid #e7a3a3;
+$inputPlaceholderTextColor:#a6a6a6;
+$inputTransition:border-color $transitionDuration,box-shadow $transitionDuration;
+
+//input groups
+$inputGroupBorderColor:#dadada;
+$inputGroupBgColor:#dbdbdb;
+$inputGroupTextColor:$textColor;
+
+//input lists (e.g. dropdown, autocomplete, multiselect, orderlist)
+$inputListMinWidth:12em;
+$inputListBgColor:#ffffff;
+$inputListPadding:0;
+
+$inputListItemPadding:0.429em 0.857em;
+$inputListItemBgColor:transparent;
+$inputListItemTextColor:$textColor;
+$inputListItemHoverBgColor:#f4f4f4;
+$inputListItemHoverTextColor:$textColor;
+$inputListItemHighlightBgColor:$highlightBgColor;
+$inputListItemHighlightTextColor:$highlightColorText;
+$inputListItemBorder:0 none;
+$inputListItemMargin:0;
+$inputListItemDividerColor:#dadada;
+
+$inputListHeaderPaddingTop:0.429em;
+$inputListHeaderPaddingLeft:0.857em;
+$inputListHeaderPaddingRight:0.857em;
+$inputListHeaderPaddingBottom:0.429em;
+$inputListHeaderMargin:0;
+$inputListHeaderBgColor:#ffffff;
+$inputListHeaderTextColor:$textColor;
+$inputListHeaderBorder:1px solid #eaeaea;
+
+$inputListHeaderSearchIconColor:$textSecondaryColor;
+$inputListHeaderCloseIconColor:$textColor;
+$inputListHeaderCloseIconHoverColor:$primaryColor;
+$inputListHeaderCloseIconTransition:color $transitionDuration;
+
+//inputs with panels (e.g. password)
+$inputContentPanelPadding:12px;
+$inputContentPanelBgColor:#ffffff;
+$inputContentPanelTextColor:$textColor;
+
+//static positioned input lists like listbox
+$inputListBorder:1px solid #eaeaea;
+
+//inputs with overlays (e.g. autocomplete, dropdown, multiselect)
+$inputOverlayBorder:1px solid #eaeaea;
+$inputOverlayShadow:0 0 6px 0 rgba(0, 0, 0, 0.16);
+
+//input dropdowns (e.g. multiselect, dropdown)
+$inputDropdownIconColor:$textColor;
+
+//button
+$buttonTextOnlyPadding:0.429em 1em;
+$buttonWithLeftIconPadding:0.429em 1em 0.429em 2em;
+$buttonWithRightIconPadding:0.429em 2em 0.429em 1em;
+$buttonIconOnlyPadding:0.429em;
+$buttonIconOnlyWidth:2.357em;
+
+$buttonBgColor:$primaryColor;
+$buttonBorder:1px solid $primaryDarkerColor;
+$buttonTextColor:$primaryTextColor;
+
+$buttonHoverBgColor:$primaryDarkColor;
+$buttonHoverTextColor:$primaryTextColor;
+$buttonHoverBorderColor:$primaryDarkColor;
+$buttonActiveBgColor:$primaryDarkerColor;
+$buttonActiveTextColor:$primaryTextColor;
+$buttonActiveBorderColor:$primaryDarkerColor;
+$buttonFocusBorderColor:$primaryDarkerColor;
+$buttonFocusOutline:0 none;
+$buttonFocusOutlineOffset:0px;
+$buttonFocusShadow:0 0 0 0.2em lighten($primaryColor, 25%);
+$buttonTransition:background-color $transitionDuration,box-shadow $transitionDuration;
+$raisedButtonShadow:0 2px 4px 0 rgba(0, 0, 0, 0.10);
+$roundedButtonBorderRadius:15px;
+
+$secondaryButtonBgColor:#f3f3f3;
+$secondaryButtonBorder:1px solid #f3f3f3;
+$secondaryButtonTextColor:#333333;
+$secondaryButtonHoverBgColor:#d1d1d1;
+$secondaryButtonHoverTextColor:#212121;
+$secondaryButtonHoverBorderColor:#d1d1d1;
+$secondaryButtonActiveBgColor:$primaryColor;
+$secondaryButtonActiveTextColor:#ffffff;
+$secondaryButtonActiveBorderColor:$primaryColor;
+$secondaryButtonFocusShadow:0 0 0 0.2em lighten($primaryColor, 10%);
+
+$infoButtonBgColor:#A3DEF8;
+$infoButtonTextColor:#3D4447;
+$infoButtonBorder:1px solid #79C8EB;
+$infoButtonHoverBgColor:#81CBEC;
+$infoButtonHoverTextColor:#3D4447;
+$infoButtonHoverBorderColor:#60B7DE;
+$infoButtonActiveBgColor:#3ea9db;
+$infoButtonActiveTextColor:#3D4447;
+$infoButtonActiveBorderColor:#2987B1;
+$infoButtonFocusShadow:0 0 0 0.2em lighten($infoButtonBgColor, 10%);
+
+$successButtonBgColor:#A3E2C6;
+$successButtonTextColor:#323E39;
+$successButtonBorder:1px solid #80CAAA;
+$successButtonHoverBgColor:#80CAAA;
+$successButtonHoverTextColor:#323E39;
+$successButtonHoverBorderColor:#5EA285;
+$successButtonActiveBgColor:#31B57C;
+$successButtonActiveTextColor:#323E39;
+$successButtonActiveBorderColor:#5EA285;
+$successButtonFocusShadow:0 0 0 0.2em lighten($successButtonBgColor, 10%);
+
+$warningButtonBgColor:#FEEDBC;
+$warningButtonTextColor:#333333;
+$warningButtonBorder:1px solid #F7DB8A;
+$warningButtonHoverBgColor:#FFDE87;
+$warningButtonHoverTextColor:#333333;
+$warningButtonHoverBorderColor:#F3CE61;
+$warningButtonActiveBgColor:#FDC328;
+$warningButtonActiveTextColor:#333333;
+$warningButtonActiveBorderColor:#DEA818;
+$warningButtonFocusShadow:0 0 0 0.2em lighten($warningButtonBgColor, 5%);
+
+$dangerButtonBgColor:#F4B6B6;
+$dangerButtonTextColor:#262222;
+$dangerButtonBorder:1px solid #E38787;
+$dangerButtonHoverBgColor:#EF9999;
+$dangerButtonHoverTextColor:#262222;
+$dangerButtonHoverBorderColor:#CB5858;
+$dangerButtonActiveBgColor:#EB5656;
+$dangerButtonActiveTextColor:#262222;
+$dangerButtonActiveBorderColor:#B73737;
+$dangerButtonFocusShadow:0 0 0 0.2em lighten($dangerButtonBgColor, 10%);
+
+//checkbox
+$checkboxWidth:20px;
+$checkboxHeight:20px;
+$checkboxActiveBorderColor:$primaryColor;
+$checkboxActiveBgColor:$primaryColor;
+$checkboxActiveTextColor:#ffffff;
+$checkboxActiveHoverTextColor:#ffffff;
+$checkboxActiveHoverBgColor:$primaryDarkerColor;
+$checkboxActiveHoverBorderColor:$primaryDarkerColor;
+$checkboxActiveFocusBgColor:$primaryDarkerColor;
+$checkboxActiveFocusTextColor:#ffffff;
+$checkboxActiveFocusBorderColor:$primaryDarkerColor;
+$checkboxFocusBgColor:$inputBgColor;
+$checkboxFocusTextColor:$textSecondaryColor;
+$checkboxFocusBorderColor:$inputBorder;
+$checkboxTransition:background-color $transitionDuration, border-color $transitionDuration;
+
+//radiobutton
+$radiobuttonWidth:20px;
+$radiobuttonHeight:20px;
+$radiobuttonActiveBorderColor:$primaryColor;
+$radiobuttonActiveBgColor:$primaryColor;
+$radiobuttonActiveTextColor:#ffffff;
+$radiobuttonActiveHoverBgColor:$primaryDarkerColor;
+$radiobuttonActiveHoverTextColor:#ffffff;
+$radiobuttonActiveHoverBorderColor:$primaryDarkerColor;
+$radiobuttonActiveFocusBgColor:$primaryDarkerColor;
+$radiobuttonActiveFocusTextColor:#ffffff;
+$radiobuttonActiveFocusBorderColor:$primaryDarkerColor;
+$radiobuttonFocusBgColor:$inputBgColor;
+$radiobuttonFocusTextColor:$textSecondaryColor;
+$radiobuttonFocusBorderColor:$primaryColor;
+$radiobuttonTransition:background-color $transitionDuration, border-color $transitionDuration;
+
+//togglebutton
+$toggleButtonBgColor:#eaeaea;
+$toggleButtonBorder:1px solid #eaeaea;
+$toggleButtonTextColor:#333333;
+$toggleButtonIconColor:#666666;
+$toggleButtonHoverBgColor:#c8c8c8;
+$toggleButtonHoverBorderColor:#c8c8c8;
+$toggleButtonHoverTextColor:#333333;
+$toggleButtonHoverIconColor:#666666;
+$toggleButtonActiveBgColor:$highlightBgColor;
+$toggleButtonActiveBorderColor:$highlightBgColor;
+$toggleButtonActiveTextColor:$highlightColorText;
+$toggleButtonActiveIconColor:$highlightColorText;
+$toggleButtonActiveHoverBgColor:$highlightBgColorDark;
+$toggleButtonActiveHoverBorderColor:$highlightBgColorDark;
+$toggleButtonActiveHoverTextColor:$highlightColorText;
+$toggleButtonActiveHoverIconColor:$highlightColorText;
+$toggleButtonFocusOutline:0 none;
+$toggleButtonFocusBgColor:#eaeaea;
+$toggleButtonFocusBorderColor:$inputFocusBorderColor;
+$toggleButtonFocusTextColor:#333333;
+$toggleButtonFocusIconColor:#666666;
+$toggleButtonActiveFocusBgColor:$toggleButtonActiveBgColor;
+$toggleButtonActiveFocusBorderColor:$toggleButtonFocusBorderColor;
+$toggleButtonActiveFocusTextColor:$toggleButtonActiveTextColor;
+$toggleButtonActiveFocusIconColor:$toggleButtonActiveIconColor;
+
+//inplace
+$inplacePadding:$inputPadding;
+$inplaceHoverBgColor:#f4f4f4;
+$inplaceHoverTextColor:$textColor;
+$inplaceTransition:background-color $transitionDuration;
+
+//rating
+$ratingTransition:color $transitionDuration;
+$ratingCancelIconColor:#f3b9b9;
+$ratingCancelHoverIconColor:#d66161;
+$ratingIconFontSize:1.429em;
+$ratingStarIconColor:$textColor;
+$ratingStarIconHoverColor:$primaryColor;
+
+//slider
+$sliderBgColor:#c4c4c4;
+$sliderBorder:0 none;
+$sliderHeight:.286em;
+$sliderWidth:0.286em;
+$sliderHandleWidth:1.429em;
+$sliderHandleHeight:1.429em;
+$sliderHandleBgColor:#ffffff;
+$sliderHandleBorder:2px solid #7f7f7f;
+$sliderHandleBorderRadius:50%;
+$sliderHandleHoverBorder:2px solid $primaryColor;
+$sliderHandleHoverBgColor:2px solid #7f7f7f;
+$sliderHandleTransition:border-color $transitionDuration;
+$sliderRangeBgColor:$primaryColor;
+
+//calendar
+$calendarWidth:18.571em;
+$calendarNavIconColor:$textSecondaryColor;
+$calendarNavIconHoverColor:$textColor;
+$calendarNavIconTransition:color $transitionDuration;
+$calendarPadding:0.857em;
+$calendarTableMargin:0.857em 0 0 0;
+$calendarHeaderCellPadding:.5em;
+$calendarCellDatePadding:.5em;
+$calendarCellDateHoverBgColor:#f4f4f4;
+$calendarCellDateBorderRadius:$borderRadius;
+$calendarCellDateSelectedBgColor:$primaryColor;
+$calendarCellDateSelectedTextColor:$primaryTextColor;
+$calendarCellDateTodayBgColor:#d0d0d0;
+$calendarCellDateTodayTextColor:$textColor;
+$calendarTimePickerDivider: 1px solid #a6a6a6;
+$calendarTimePickerPadding:0.857em;
+$calendarTimePickerIconColor:$textColor;
+$calendarTimePickerIconFontSize:1.286em;
+$calendarTimePickerTimeFontSize:1.286em;
+$calendarTimePickerIconHoverColor:$textColor;
+$calendarButtonBarDivider: 1px solid #d8dae2;
+$calendarMultipleMonthDivider: 1px solid #d8dae2;
+
+//spinner
+$spinnerButtonWidth:1.429em;
+
+//input switch
+$inputSwitchWidth:3em;
+$inputSwitchHeight:1.75em;
+$inputSwitchBorderRadius:30px;
+$inputSwitchTransition:background-color $transitionDuration;
+$inputSwitchSliderOffBgColor:$inputBgColor;
+$inputSwitchHandleOffBgColor:$primaryColor;
+$inputSwitchSliderOffHoverBgColor:#d8dae2;
+$inputSwitchSliderOffFocusBgColor:#d8dae2;
+$inputSwitchSliderOnBgColor:$highlightBgColor;
+$inputSwitchSliderOnHoverBgColor:$highlightBgColor;
+$inputSwitchHandleOnBgColor:$highlightColorText;
+$inputSwitchSliderOnFocusBgColor:$highlightBgColor;
+
+//panel common (e.g. accordion, panel, tabview)
+$panelHeaderBorder:1px solid $primaryColor;
+$panelHeaderBgColor:$primaryColor;
+$panelHeaderTextColor:$primaryTextColor;
+$panelHeaderIconColor:$primaryTextColor;
+$panelHeaderIconHoverColor:$primaryTextColor;
+$panelHeaderIconTransition:color $transitionDuration;
+$panelHeaderFontWeight:400;
+$panelHeaderPadding:0.571em 1em;;
+$panelContentBorder:1px solid #dadada;
+$panelContentBgColor:#ffffff;
+$panelContentTextColor:$textColor;
+$panelContentPadding:0.571em 1em;
+$panelFooterBorder:1px solid #dadada;
+$panelFooterBgColor:#ffffff;
+$panelFooterTextColor:$textColor;
+$panelFooterPadding:0.571em 1em;
+$panelHeaderHoverBgColor:$primaryDarkerColor;
+$panelHeaderHoverBorder:1px solid $primaryDarkerColor;
+$panelHeaderHoverTextColor:$primaryTextColor;
+$panelHeaderHoverIconColor:$primaryTextColor;
+$panelHeaderActiveBgColor:$highlightBgColor;
+$panelHeaderActiveBorder:1px solid #dadada;
+$panelHeaderActiveTextColor:$highlightColorText;
+$panelHeaderActiveIconColor:$highlightColorText;
+$panelHeaderActiveHoverBgColor:$highlightBgColorDark;
+$panelHeaderActiveHoverBorder:1px solid $highlightBgColorDark;
+$panelHeaderActiveHoverTextColor:$highlightColorText;
+$panelHeaderActiveHoverIconColor:$highlightColorText;
+$panelHeaderTransition:background-color $transitionDuration;
+
+//accordion
+$accordionSpacing:2px;
+
+//tabview
+$tabHeaderSpacing:.214em;
+$tabsNavBorder:0 none;
+$tabsNavBgColor:#ffffff;
+
+//scrollpanel
+$scrollPanelHandleBgColor:#dadada;
+$scrollPanelTrackBorder:0 none;
+$scrollPanelTrackBgColor:#f8f8f8;
+
+//card
+$cardShadow:0 0 6px 0 rgba(0, 0, 0, 0.16);
+
+//paginator
+$paginatorBgColor:#ffffff;
+$paginatorBorder:1px solid #dadada;
+$paginatorIconColor:$textColor;
+$paginatorPadding:0;
+$paginatorElementWidth:2.286em;
+$paginatorElementHeight:2.286em;
+$paginatorElementHoverBgColor:#f4f4f4;
+$paginatorElementHoverIconColor:$textColor;
+$paginatorElementBorderRadius:0;
+$paginatorElementMargin:0;
+$paginatorElementPadding:0;
+$paginatorElementBorder:0 none;
+
+//table
+$tableCaptionFontWeight:700;
+$tableSummaryFontWeight:700;
+$tableHeaderCellPadding:0.571em 0.857em;
+$tableHeaderCellBgColor:#ffffff;
+$tableHeaderCellTextColor:$textColor;
+$tableHeaderCellFontWeight:700;
+$tableHeaderCellBorder:1px solid #dadada;
+$tableHeaderCellHoverBgColor:#eaeaea;
+$tableHeaderCellHoverTextColor:$textColor;
+$tableHeaderCellIconColor:$textColor;
+$tableHeaderCellHoverIconColor:$textColor;
+$tableBodyRowBgColor:#ffffff;
+$tableBodyRowTextColor:$textColor;
+$tableBodyRowEvenBgColor:#f8f8f8;
+$tableBodyRowHoverBgColor:#eaeaea;
+$tableBodyRowHoverTextColor:#333333;
+$tableBodyCellBorder:1px solid #dadada;
+$tableBodyCellPadding:0.571em 0.857em;
+$tableFooterCellPadding:0.571em 0.857em;
+$tableFooterCellBgColor:#ffffff;
+$tableFooterCellTextColor:$textColor;
+$tableFooterCellFontWeight:700;
+$tableFooterCellBorder:1px solid #dadada;
+$tableResizerHelperBgColor:$primaryColor;
+
+//schedule
+$scheduleEventBgColor:$highlightBgColor;
+$scheduleEventBorder:1px solid $primaryDarkColor;
+$scheduleEventTextColor:$highlightColorText;
+
+//tree
+$treeNodePadding:0.143em 0;
+$treeNodeLabelPadding:0.286em;
+$treeNodeContentSpacing:0.143em;
+
+//lightbox
+$lightBoxNavIconFontSize:3em;
+$lightBoxNavIconColor:#ffffff;
+
+//org chart
+$organizationChartConnectorColor:#c8c8c8;
+
+//messages
+$messagesMargin:1em 0;
+$messagesPadding:1em;
+$messagesIconFontSize:2em;
+$messageCloseIconFontSize:1.5em;
+
+//message
+$messagePadding:.429em;
+$messageMargin:0;
+$messageIconFontSize:1.714em;
+$messageTextFontSize:$fontSize;
+
+//toast
+$toastShadow:0 3px .429em 0 rgba(0, 0, 0, 0.16);
+$toastMessageMargin:0 0 1em 0;
+
+//severities
+
+$infoMessageBgColor:#A3DEF8;
+$infoMessageBorder:1px solid #79C8EB;
+$infoMessageTextColor:#212121;
+$infoMessageIconColor:#212121;
+
+$successMessageBgColor:#A3E2C6;
+$successMessageBorder:1px solid #A3E2C6;
+$successMessageTextColor:#212121;
+$successMessageIconColor:#212121;
+
+$warnMessageBgColor:#ffe277;
+$warnMessageBorder:1px solid #ffe277;
+$warnMessageTextColor:#212121;
+$warnMessageIconColor:#212121;
+
+$errorMessageBgColor:#ff8b8b;
+$errorMessageBorder:1px solid #ff8b8b;
+$errorMessageTextColor:#212121;
+$errorMessageIconColor:#212121;
+
+//growl
+$growlTopLocation:120px;
+$growlIconFontSize:3.429em;
+$growlMessageTextMargin: 0 0 0 4em;
+$growlMargin:0 0 1em 0;
+$growlPadding:1em;
+$growlShadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);
+$growlOpacity:.9;
+
+//overlays
+$overlayContentBorderColor:#f1f1f1;
+$overlayContentBorder:1px solid $overlayContentBorderColor;
+$overlayContainerShadow:0 0 6px 0 rgba(0, 0, 0, 0.16);
+
+//dialog
+$dialogHeaderPadding:1em;
+$confirmDialogPadding:1.5em;
+
+//overlay panel
+$overlayPanelCloseIconBgColor:$primaryColor;
+$overlayPanelCloseIconColor:#ffffff;
+$overlayPanelCloseIconHoverBgColor:$primaryDarkerColor;
+$overlayPanelCloseIconHoverColor:#ffffff;
+
+//tooltip
+$tooltipBgColor:$highlightBgColor;
+$tooltipTextColor:$highlightColorText;
+$tooltipPadding:$inputPadding;
+
+//steps
+$stepsItemBgColor:#ffffff;
+$stepsItemBorder:1px solid #c8c8c8;
+$stepsItemNumberColor:$textSecondaryColor;
+$stepsItemTextColor:$textSecondaryColor;
+$stepsItemWidth:28px;
+$stepsItemHeight:28px;
+
+//progressbar
+$progressBarHeight:1.714em;
+$progressBarBorder:0 none;
+$progressBarBgColor:#efefef;
+$progressBarValueBgColor:$primaryColor;
+
+//menu (e.g. menu, menubar, tieredmenu)
+$menuBgColor:#ffffff;
+$menuBorder:1px solid #c8c8c8;
+$menuPadding:0;
+$menuTextColor:$textColor;
+$menuitemPadding:0.714em 0.857em;
+$menuitemMargin:0;
+$menuitemTextColor:$textColor;
+$menuitemIconColor:$textColor;
+$menuitemHoverTextColor:$textColor;
+$menuitemHoverIconColor:$textColor;
+$menuitemHoverBgColor:#eaeaea;
+$menuitemActiveTextColor:$textColor;
+$menuitemActiveIconColor:$textColor;
+$menuitemActiveBgColor:#eaeaea;
+$submenuHeaderMargin: 0;
+$submenuPadding: 0;
+$overlayMenuBorder:1px solid #c8c8c8;
+$overlayMenuShadow:0 0px 6px 0 rgba(0, 0, 0, 0.16);
+
+//misc
+$maskBgColor:rgba(0, 0, 0, 0.4);        //dialog mask
+$inlineSpacing:.5em;                      //spacing between inline elements
+$chipsItemMargin:0 .286em 0 0;            //autocomplete and chips token spacing
+$dataIconColor:$textSecondaryColor;       //icon color of a data such as treetoggler, table expander
+$dataIconHoverColor:$textColor;           //hover icon color of a data such as treetoggler, table expander
+
+//general
+$disabledOpacity:.5;                      //opacity of a disabled item

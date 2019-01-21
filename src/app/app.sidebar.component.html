@@ -1,0 +1,28 @@
+<div class="layout-sidebar" [ngClass]="{'layout-sidebar-active':app.mobileMenuActive}">
+  <ul class="layout-menu" (click)="app.hideMobileMenu($event)">
+    <li>
+      <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-globe"></i>
+        <span>Kiállítási tárgyak</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/cabinet']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-globe"></i>
+        <span>Vitrin felvétele</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/exhibit']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-globe"></i>
+        <span>Tárgy felvétele</span>
+      </a>
+    </li>
+    <!--li>
+      <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <i class="fa fa-globe"></i>
+        <span>Helyiségek?</span>
+      </a>
+    </li-->
+  </ul>
+</div>
