@@ -1,0 +1,38 @@
+<div class="ui-g">
+
+    <div class="ui-g-12">
+        <div class="card">
+            <div class="ui-g">
+                <div class="ui-g-12">
+                    <h1>Vitrinek</h1>
+                    <p-tree [value]="files1" selectionMode="single" [(selection)]="selectedNode1" [style]="{width: '100%'}"></p-tree>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui-g-12">
+        <div class="card">
+            <h1>Vitrinek</h1>
+            <p-treeTable [value]="files4" [columns]="cols2" selectionMode="checkbox" [(selection)]="selectedNode3">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Type</th>
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
+                    <tr>
+                        <td *ngFor="let col of columns; let i = index">
+                            <p-treeTableToggler [rowNode]="rowNode" *ngIf="i == 0"></p-treeTableToggler>
+                            <p-treeTableCheckbox [value]="rowNode" *ngIf="i == 0"></p-treeTableCheckbox>
+                            <span style="vertical-align: middle">{{rowData[col.field]}}</span>
+                        </td>
+                    </tr>
+                </ng-template>
+            </p-treeTable>
+        </div>
+    </div>
+
+</div>

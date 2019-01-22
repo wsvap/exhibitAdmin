@@ -11,6 +11,7 @@ import { AppTopBarComponent } from './app.topbar.component';
 import { AppSideBarComponent } from './app.sidebar.component';
 
 import { ExhibitListComponent } from './admin/view/exhibit-list.component';
+import { CabinetListComponent } from './admin/view/cabinet-list.component';
 import { ExhibitComponent } from './admin/view/exhibit.component';
 import { CabinetComponent } from './admin/view/cabinet.component';
 
@@ -90,6 +91,7 @@ import { NodeService } from './admin/service/nodeservice';
         AppTopBarComponent,
         AppSideBarComponent,
         ExhibitListComponent,
+        CabinetListComponent,
         ExhibitComponent,
         CabinetComponent
     ],

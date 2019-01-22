@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ConfirmationService} from 'primeng/primeng';
+import {Component, OnInit} from '@angular/core';
+import {ConfirmationService} from 'primeng/primeng';
+import {Car} from '../domain/car';
+import {CarService} from '../service/carservice';
 
 @Component({
     templateUrl: './cabinet.component.html',
@@ -7,9 +9,18 @@ import { ConfirmationService} from 'primeng/primeng';
 })
 export class CabinetComponent implements OnInit {
 
-    constructor(private confirmationService: ConfirmationService) {}
+    sourceCars: Car[];
+
+    targetCars: Car[];
+
+    constructor(private carService: CarService, private confirmationService: ConfirmationService) {
+    }
 
     ngOnInit() {
+
+        this.carService.getCarsMedium().then(cars => this.sourceCars = cars);
+        this.targetCars = [];
+
     }
 
 
