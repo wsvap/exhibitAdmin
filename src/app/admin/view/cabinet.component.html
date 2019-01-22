@@ -9,8 +9,15 @@
                         <div class="ui-g-12 ui-md-4">
                             <label for="name">Aktív</label>
                         </div>
-                        <div class="ui-g-12 ui-md-8">
+                        <div class="ui-g-12 ui-md-8" style="margin-bottom:10px">
                             <p-inputSwitch [(ngModel)]="switchChecked"></p-inputSwitch>
+                        </div>
+
+                        <div class="ui-g-12 ui-md-4">
+                            <label for="cabinetId">Azonosító</label>
+                        </div>
+                        <div class="ui-g-12 ui-md-8" style="margin-bottom:10px">
+                            <input id="cabinetId" type="text" pInputText style="width: 50%"/>
                         </div>
 
                         <div class="ui-g-12 ui-md-4">
@@ -21,11 +28,19 @@
                         </div>
 
                         <div class="ui-g-12 ui-md-4">
-                            <label for="cabinetId">Vitrinszám</label>
+                            <label for="name">Angol név</label>
                         </div>
                         <div class="ui-g-12 ui-md-8" style="margin-bottom:10px">
-                            <input id="cabinetId" type="text" pInputText/>
+                            <input id="name" type="text" pInputText/>
                         </div>
+
+                        <div class="ui-g-12 ui-md-4">
+                            <label for="name">Német név</label>
+                        </div>
+                        <div class="ui-g-12 ui-md-8" style="margin-bottom:10px">
+                            <input id="name" type="text" pInputText/>
+                        </div>
+
                     </div>
                 </div>
             </div>
